@@ -5,7 +5,7 @@ ENV OPERATOR=/usr/local/bin/go-go-operator-sdk-postgresql \
     USER_NAME=go-go-operator-sdk-postgresql
 
 # install operator binary
-COPY entrypoint ${OPERATOR}
+COPY go-go-operator-sdk-postgresql ${OPERATOR}
 
 COPY build/bin /usr/local/bin
 
